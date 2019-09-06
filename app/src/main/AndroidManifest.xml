@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.com.quizapplication">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.activeandroid.app.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/iclauncher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/iclauncherround"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.app.quiz.ChargementScoreActivity"
+            android:noHistory="true"/>
+        <activity android:name="com.app.PartiesActivity"
+            android:noHistory="true"/>
+        <activity
+            android:name="com.app.LoginActivity"
+            android:noHistory="true" />
+        <activity
+            android:name="com.app.RegisterActivity"
+            android:noHistory="true" />
+        <activity
+            android:name="com.app.QuestionnaireActivity"
+            android:noHistory="true" />
+        <activity
+            android:name="com.app.ChoisirNiveauActivity"
+            android:noHistory="true" />
+        <activity android:name="com.app.SlashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- *************definir la BD*********** -->
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="monquiz.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" /> <!-- *****************definition de la version des tables************* -->
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.app.quiz.activeandroid.model.Categories,com.app.quiz.activeandroid.model.Difficultes,com.app.quiz.activeandroid.model.Joueurs,com.app.quiz.activeandroid.model.Parties,com.app.quiz.activeandroid.model.Questions" /> <!-- ** permet de creer mes tables de la BD -->
+        <!-- ** il faut ajoutant le package et le nom de la classe ** -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name="com.app.quiz.JavaActivity" />
+        <activity android:name="com.app.MainActivity" />
+
+        <provider
+            android:name="com.activeandroid.content.ContentProvider"
+            android:authorities="app.com.quizapplication"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

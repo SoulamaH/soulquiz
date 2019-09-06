@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundimage"
+    tools:context="com.app.SlashScreenActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@mipmap/groupe66"/>
+
+    <ProgressBar
+        android:layout_marginTop="43dp"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:indeterminate="true"/>
+
+    <TextView
+        android:layout_marginTop="350dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@android:color/white"
+        android:text="Chargement en cours ..."/>
+
+</RelativeLayout>

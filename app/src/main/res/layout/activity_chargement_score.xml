@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BAAEA0"
+    android:orientation="vertical"
+    tools:context="com.app.quiz.ChargementScoreActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="bottom"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_chargement"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Veuillez-patienter ..."
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_bold"/>
+
+        <ProgressBar
+            android:id="@+id/chargement_score_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"/>
+
+        <ImageView
+            android:id="@+id/reload"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_reload"
+
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

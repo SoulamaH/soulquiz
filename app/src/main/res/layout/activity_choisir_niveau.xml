@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.ChoisirNiveauActivity">
+
+  <include layout="@layout/toolbar"/>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@android:color/darker_gray"
+      android:layout_gravity="bottom"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@mipmap/overlay"
+      android:gravity="center"
+      android:paddingHorizontal="40dp"
+      android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_logo_choix_niveau"
+        android:layout_marginBottom="-70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/javarounded"
+        android:elevation="15dp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        app:cardCornerRadius="25sp"
+        app:cardElevation="10dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:fontFamily="@font/roboto"
+              android:textColor="@color/drab"
+              android:text="Veuillez selectionner votre niveau"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lnchoixfacile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/drab"
+                android:text="FACILE"/>
+
+            <TextView
+                android:id="@+id/lnchoixmoyen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="MOYEN"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/drab"
+                android:layout_weight="1"/>
+
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:id="@+id/lnchoixdifficile"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:layout_weight="1">
+            <TextView
+                android:id="@+id/select_difficulte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/drab"
+                android:text="DIFFICILE"/>
+          </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+      </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+  </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

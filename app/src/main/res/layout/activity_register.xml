@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.RegisterActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="bottom"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#BAAEA0"
+            android:layout_marginBottom="60dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="80dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:src="@mipmap/groupe66"/>
+
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/register_nom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_margin="5dp"
+                    android:hint="Nom"
+                    android:inputType="textPersonName"
+                    app:libIZO_clearIconTint="@color/rust"
+                    app:libIZO_setBorderColor="@color/rust"
+                    app:libIZO_setBorderView="true"
+                    app:libIZO_setClearIconVisible="true"
+                    app:libIZO_setCornerRadius="4dp"
+                    app:libIZO_setStrokeWidth="2dp"/>
+
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/register_prenom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_margin="5dp"
+                    android:hint="Prenom"
+                    android:inputType="textPersonName"
+                    app:libIZO_clearIconTint="@color/rust"
+                    app:libIZO_setBorderColor="@color/rust"
+                    app:libIZO_setBorderView="true"
+                    app:libIZO_setClearIconVisible="true"
+                    app:libIZO_setCornerRadius="4dp"
+                    app:libIZO_setStrokeWidth="2dp"/>
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/register_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_margin="5dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    app:libIZO_clearIconTint="@color/rust"
+                    app:libIZO_setBorderColor="@color/rust"
+                    app:libIZO_setBorderView="true"
+                    app:libIZO_setClearIconVisible="true"
+                    app:libIZO_setCornerRadius="4dp"
+                    app:libIZO_setStrokeWidth="2dp"/>
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/register_numero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_margin="5dp"
+                    android:hint="Numero"
+                    android:inputType="phone"
+                    app:libIZO_clearIconTint="@color/rust"
+                    app:libIZO_setBorderColor="@color/rust"
+                    app:libIZO_setBorderView="true"
+                    app:libIZO_setClearIconVisible="true"
+                    app:libIZO_setCornerRadius="4dp"
+                    app:libIZO_setStrokeWidth="2dp"/>
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/register_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_margin="5dp"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    app:libIZO_clearIconTint="@color/rust"
+                    app:libIZO_setBorderColor="@color/rust"
+                    app:libIZO_setBorderView="true"
+                    app:libIZO_setClearIconVisible="true"
+                    app:libIZO_setCornerRadius="4dp"
+                    app:libIZO_setStrokeWidth="2dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/register_valider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-100dp"
+            android:elevation="20dp"
+            android:src="@mipmap/groupe73" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
